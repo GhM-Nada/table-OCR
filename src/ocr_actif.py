@@ -13,7 +13,7 @@ from difflib import SequenceMatcher
 # Import your table extractor module
 from table_creator.table_extractor import TableExtraction
 
-from tesseract_preprocessing import PDFProcessor
+from preprocessing import PDFProcessor
 # Predefined structure for balance sheet tables (ACTIF section)
 BALANCE_SHEET_STRUCTURE = {
     "columns": [
@@ -669,7 +669,7 @@ def process_image(imgpath, tab_ext, bbox_output=None, use_structure=True):
 def main():
     # Default input and output paths
     default_input = "./src/input/actif11.pdf"
-    default_output_dir = "./src/output/html"
+    default_output_dir = "./src/output/actif"
     
        
     # Generate timestamp for unique filenames

@@ -9,7 +9,8 @@ from deskew import determine_skew
 from scipy import ndimage
 from tqdm import tqdm
 import logging
-from ultralyticsplus import YOLO, render_result  # YOLO model for table detection
+# YOLO model for table detection
+from ultralytics import YOLO
 
 # Configure logging for tracking progress and errors
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -46,7 +47,7 @@ class PDFProcessor:
             os.makedirs(os.path.join(output_dir, "box_files"), exist_ok=True)  # Tesseract box files
 
         # Initialize YOLO model for table detection
-        self.yolo_model = YOLO('keremberke/yolov8m-table-extraction')
+        self.yolo_model = YOLO('./src/models/best.pt')
         self.yolo_model.overrides['conf'] = 0.25  # Minimum confidence for detection
         self.yolo_model.overrides['iou'] = 0.45   # IoU threshold for non-maximum suppression
         self.yolo_model.overrides['agnostic_nms'] = False

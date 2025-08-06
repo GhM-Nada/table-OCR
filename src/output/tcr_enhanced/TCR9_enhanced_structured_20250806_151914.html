@@ -1,0 +1,434 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Enhanced TCR with Row Matching - TCR9</title>
+        
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 20px; 
+            background-color: #f5f5f5; 
+        }
+        .container { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            color: #2c3e50; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            font-size: 28px; 
+        }
+        .enhanced-features {
+            background: #e8f5e8;
+            padding: 15px;
+            border-left: 4px solid #27ae60;
+            margin-bottom: 20px;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            font-size: 14px; 
+        }
+        th, td { 
+            padding: 12px 8px; 
+            text-align: left; 
+            border: 1px solid #ddd; 
+        }
+        th { 
+            background-color: #34495e; 
+            color: white; 
+            font-weight: bold; 
+            position: sticky; 
+            top: 0; 
+        }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f5f5f5; }
+        .numeric { text-align: right; font-family: 'Courier New', monospace; }
+        .description { font-weight: 500; }
+        .empty-cell { color: #bdc3c7; font-style: italic; }
+        .negative { color: #e74c3c; }
+    </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <h1>Enhanced TCR with Row Matching - TCR9</h1>
+            <div class="enhanced-features">
+                <strong>🎯 Enhanced Features:</strong> 
+                • Dynamic Column Detection 
+                • OCR_Actif Row Matching Algorithm 
+                • Advanced Number Cleaning (handles spaces, dots, negative numbers)
+                • Template-based Structure Mapping
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rubriques</th><th>N_DEBIT</th><th>N_CREDIT</th><th>N-1_DEBIT</th><th>N-1_CREDIT</th>
+                    </tr>
+                </thead>
+                <tbody>
+    <tr>
+<td><span class="description">Ventes de marchandises</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Produits fabriqués</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Production vendue Prestations de services</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Vente de travaux</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Produits annexes</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Rabais, remises, ristournes accordés</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Chiffre d'affaires net des Rabais, remises, ristournes</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Production stockée ou déstockée</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">198</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Production immobilisée</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Subventions d'exploitation</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">62</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">I-Production de l'exercice</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Achats de marchandises vendues</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">136,242,023</span></td>
+<td><span class="numeric">134,321,918</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Matières premières</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">1,397,809</span></td>
+<td><span class="numeric">1,928,017</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Autres approvisionnements</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Variations des stocks</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Achats d'études et de prestations de services</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Autres consommations</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">199,621</span></td>
+<td><span class="numeric">258,556</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Rabais, remises, ristournes obtenus sur achats</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Sous-traitance générale</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Locations</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Entretien, réparations et maintenance</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Primes d'assurances</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">3,080</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Personnel extérieur à l'entreprise</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Rémunération d'intermédiaires et honoraires</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Publicité</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">423,068</span></td>
+<td><span class="numeric">450,000</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Déplacements, missions et réceptions</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Autres services</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">1,706,478</span></td>
+<td><span class="numeric">2,468,580</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Rabais, remises, ristournes obtenus sur services extérieurs</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">II-Consommations de l'exercice</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">140,653,191</span></td>
+<td><span class="numeric">140,895,731</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">III-Valeur ajoutée d'exploitation (I-II)</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">2,288,860,520,290,570</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Charges de personnel</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">3,043,049</span></td>
+<td><span class="numeric">3,596,494</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Impôts et taxes et versements assimilés</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">1,493,691</span></td>
+<td><span class="numeric">1,490,626</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">IV-Excédent brut d'exploitation</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Autres produits opérationnels</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">24,224</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Autres charges opérationnelles</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Dotations aux amortissements</span></td>
+<td><span class="numeric">3</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Provision</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="numeric">3,657,263</span></td>
+<td><span class="numeric">1,763,041</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Pertes de valeur</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Reprises sur pertes de valeur et provisions</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">V-Résultat opérationnel</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Produits financiers</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Charges financières</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">VI-Résultat financier</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">VII-Résultat ordinaire (V+VI)</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Eléments extraordinaires (produits)</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Eléments extraordinaires (Charges)</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">VIII-Résultat extraordinaire</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Impôts exigibles sur résultats</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">Impôts différés (variations) sur résultats</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="description">IX - RESULTAT NET DE L'EXERCICE</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
+    

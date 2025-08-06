@@ -54,5 +54,6 @@ Run :
 ```bash
 python src/ocr_actif.py  
 python src/ocr_passif.py  
+python src/ocr_tcr.py 
 ```
 

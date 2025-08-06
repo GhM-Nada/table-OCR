@@ -5,6 +5,7 @@ import pandas as pd
 from paddleocr import PaddleOCR
 from PIL import Image
 import gc
+
 class TextRecognizer:
     """
     A class for performing OCR on detected tables using PaddleOCR.
@@ -28,7 +29,8 @@ class TextRecognizer:
             lang='en',
             use_gpu=False,
             det_model_dir=str(self.models_dir / 'det'),
-            rec_model_dir=str(self.models_dir / 'rec')
+            rec_model_dir=str(self.models_dir / 'rec'),
+            
         )
         
 

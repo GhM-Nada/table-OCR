@@ -1,0 +1,552 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Raw OCR - TCR1-1</title>
+        
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 20px; 
+            background-color: #f5f5f5; 
+        }
+        .container { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            color: #2c3e50; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            font-size: 28px; 
+        }
+        .enhanced-features {
+            background: #e8f5e8;
+            padding: 15px;
+            border-left: 4px solid #27ae60;
+            margin-bottom: 20px;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            font-size: 14px; 
+        }
+        th, td { 
+            padding: 12px 8px; 
+            text-align: left; 
+            border: 1px solid #ddd; 
+        }
+        th { 
+            background-color: #34495e; 
+            color: white; 
+            font-weight: bold; 
+            position: sticky; 
+            top: 0; 
+        }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f5f5f5; }
+        .numeric { text-align: right; font-family: 'Courier New', monospace; }
+        .description { font-weight: 500; }
+        .empty-cell { color: #bdc3c7; font-style: italic; }
+        .negative { color: #e74c3c; }
+    </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <h1>Raw OCR - TCR1-1</h1>
+            <div class="enhanced-features">
+                <strong>🎯 Enhanced Features:</strong> 
+                • Dynamic Column Detection 
+                • OCR_Actif Row Matching Algorithm 
+                • Advanced Number Cleaning (handles spaces, dots, negative numbers)
+                • Template-based Structure Mapping
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>column 1</th><th>column 2</th><th>column 3</th><th>column 4</th><th>column 5</th><th>column 6</th><th>column 7</th><th>column 8</th><th>column 9</th><th>column 10</th><th>column 11</th>
+                    </tr>
+                </thead>
+                <tbody>
+    <tr>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>:.:</td>
+<td>.N ...:</td>
+<td><span class="empty-cell">-</span></td>
+<td>:...!....</td>
+<td>.:.</td>
+<td>N-1</td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>.DEBIT</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>CREDIT : "</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>: CREDIT. ::</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>Dinars</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>(en Dinars)... I.. ' (enDinars):</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>:.(en Dinars)</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Venles de marchandises</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>40 641 926 540</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>39 334 131 657</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>Produits fabriques</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>812 601 517</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>366614768</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Production vendue. Prestations de services</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>668 761 723</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>425 611 670</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>Venle de-travauy</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Produits annexes</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Rabais, renises, ristournes accordes</td>
+<td><span class="empty-cell">-</span></td>
+<td>565 587.114</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>1 056 010 077.</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td> Chiffre d'affaires- net,des Rabais,remises, ristounes: : '.</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>L::: .:: 41560702666,</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>...</td>
+<td><span class="empty-cell">-</span></td>
+<td>...: j-. ::::[:. 39 070 381 017::</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Produclion stockee.ou destockee</td>
+<td><span class="empty-cell">-</span></td>
+<td>94 072 07</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>319097156</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Produclion inumobilisce</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Subventions d'exploitation</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>:1-Production 'de I'exercice....</td>
+<td>Wa.!.</td>
+<td>-::.</td>
+<td><span class="empty-cell">-</span></td>
+<td>. 41466 630 592 :</td>
+<td>.:i</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>39 339 475.173:</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Achats de marchandises vendues.</td>
+<td><span class="empty-cell">-</span></td>
+<td>37 832 325 938</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>31775 384 776</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Matieres prenieres</td>
+<td><span class="empty-cell">-</span></td>
+<td>733 126471</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>680 295 880</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Autres approvisioruements</td>
+<td><span class="empty-cell">-</span></td>
+<td>129'705 488</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>111 911 183</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Variations des slocks</td>
+<td><span class="empty-cell">-</span></td>
+<td>858 501 960</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>5 462 4111 953.</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Achats d'studes et de preslations de services</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>:</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Autres consommations</td>
+<td><span class="empty-cell">-</span></td>
+<td>32 068,297.</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>30 782 607</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Rabais, renises, ristournes oblenus sur achals</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>:</td>
+<td>3 020 629 473</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>3 661 002 378.</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Sous-tailance generale</td>
+<td><span class="empty-cell">-</span></td>
+<td>496 990 873</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>117 760 989</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Lecalions</td>
+<td><span class="empty-cell">-</span></td>
+<td>251 345 183</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>221 263 189</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>:</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Entretien, reparalions et mainlenance</td>
+<td><span class="empty-cell">-</span></td>
+<td>64 782 015</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>58 362 774</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Prines d'assurances</td>
+<td><span class="empty-cell">-</span></td>
+<td>184 580 186</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>223'868 449</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>-.</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Personnel exterieur a l'entreprise.</td>
+<td><span class="empty-cell">-</span></td>
+<td>17.326 007:</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>18 790 097</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>:</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Remuneration d'iniermediaires et honoraires</td>
+<td><span class="empty-cell">-</span></td>
+<td>14 196 523</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>17 513 6S:</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>.Publicile</td>
+<td><span class="empty-cell">-</span></td>
+<td>7 896.961</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>1 429 878</td>
+<td>-.</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Deplacenients, nissions et receptions</td>
+<td><span class="empty-cell">-</span></td>
+<td>12 665 825</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>16 043 037</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Autres services</td>
+<td><span class="empty-cell">-</span></td>
+<td>221 641101</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>209 116 236</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Rabais, remises, ristoumes oblenus sur services exterieurs.</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td> - :37 836 526357 ::</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>.... : 35 283 965:354:</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td>Sinr-yaleu ajontee d'exploitation (-o. :. ... .. ........ . . ....... : :...</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>:::3630104 236.-</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>--  105 512 819</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Charges de,persornel</td>
+<td><span class="empty-cell">-</span></td>
+<td>592 549.961</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>496178 067</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Impols et laxes et versemenls assimiles</td>
+<td><span class="empty-cell">-</span></td>
+<td>152 442 659</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>451 827 738</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>..:</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>3157.507.014 :</td>
+</tr>
+
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
+    

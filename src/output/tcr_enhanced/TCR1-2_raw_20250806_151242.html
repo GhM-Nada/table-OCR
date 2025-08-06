@@ -1,0 +1,392 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Raw OCR - TCR1-2</title>
+        
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 20px; 
+            background-color: #f5f5f5; 
+        }
+        .container { 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        h1 { 
+            color: #2c3e50; 
+            text-align: center; 
+            margin-bottom: 30px; 
+            font-size: 28px; 
+        }
+        .enhanced-features {
+            background: #e8f5e8;
+            padding: 15px;
+            border-left: 4px solid #27ae60;
+            margin-bottom: 20px;
+        }
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            font-size: 14px; 
+        }
+        th, td { 
+            padding: 12px 8px; 
+            text-align: left; 
+            border: 1px solid #ddd; 
+        }
+        th { 
+            background-color: #34495e; 
+            color: white; 
+            font-weight: bold; 
+            position: sticky; 
+            top: 0; 
+        }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f5f5f5; }
+        .numeric { text-align: right; font-family: 'Courier New', monospace; }
+        .description { font-weight: 500; }
+        .empty-cell { color: #bdc3c7; font-style: italic; }
+        .negative { color: #e74c3c; }
+    </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <h1>Raw OCR - TCR1-2</h1>
+            <div class="enhanced-features">
+                <strong>🎯 Enhanced Features:</strong> 
+                • Dynamic Column Detection 
+                • OCR_Actif Row Matching Algorithm 
+                • Advanced Number Cleaning (handles spaces, dots, negative numbers)
+                • Template-based Structure Mapping
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>column 1</th><th>column 2</th><th>column 3</th><th>column 4</th><th>column 5</th><th>column 6</th><th>column 7</th><th>column 8</th><th>column 9</th><th>column 10</th><th>column 11</th><th>column 12</th>
+                    </tr>
+                </thead>
+                <tbody>
+    <tr>
+<td>5sainy</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>BP : 20000-1936</td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>Exrercice</td>
+<td><span class="empty-cell">-</span></td>
+<td>31/12/2023</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td> :N-</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>-Debit --..:</td>
+<td><span class="empty-cell">-</span></td>
+<td>--..CREDIT : -:</td>
+<td><span class="empty-cell">-</span></td>
+<td>-:</td>
+<td>.n.pEBIT::</td>
+<td><span class="empty-cell">-</span></td>
+<td>.CREDIT</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td> (en Dinars)</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>. (en' Dinars)</td>
+<td><span class="empty-cell">-</span></td>
+<td> (en'Dinars)" ---.</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Autes produits operationmels</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>30 891 778</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>89 337 025</td>
+<td>25 189 219</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>'Autres charges operalionnelles</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>77 509 285</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Dolations aux amortissemenls</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>509 000 380</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>459 493 799</td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td>Provision</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>' 1 555 009 179.</td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td>Perles - de valeur</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>1 834 770348</td>
+<td><span class="empty-cell">-</span></td>
+<td>1 555 009 179</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>979 373 810</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Reprise sur perles de valeur et provisions.</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td>V-Resultat operationnel</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>-: 2 055 230 039:.</td>
+</tr>
+<tr>
+<td>Produits financiers</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>282 291 029</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>1 298 962 821</td>
+<td>. 475 231 451</td>
+</tr>
+<tr>
+<td>Charyes financieres</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>1 203 /61'656</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>.. Vi-Resultat financler... .l..</td>
+<td>...</td>
+<td><span class="empty-cell">-</span></td>
+<td>. 921-70627</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>-.-.-..</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>+++ 23 728 368 </td>
+<td> . :</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>yn-Resultat ordinair. (Vtv!)..: ... ......</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>- - 828 261 932</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Elemsents extraordinaires (produits) (*)</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Elenents extraordinaires (Charges) (*)</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>-:</td>
+<td>... . . ..</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Inpols exigibles sur resultais</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>296 550 983</td>
+<td><span class="empty-cell">-</span></td>
+<td>82 795136</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td> 526 752 821</td>
+<td>95199155</td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>Inpols diffeies (variations) sur resultats</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+</tr>
+<tr>
+<td><span class="empty-cell">-</span></td>
+<td>HX - RESULTAT: NET.DE LOEXERCICE ::: :.</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>:61 506355</td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td><span class="empty-cell">-</span></td>
+<td>802943 006</td>
+</tr>
+
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
+    

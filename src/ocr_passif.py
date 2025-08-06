@@ -598,7 +598,7 @@ def process_image(imgpath, tab_ext, bbox_output=None, use_structure=True):
         return None, None, None
 
 def main():
-    default_input = "./src/input/passif14.pdf"  
+    default_input = "./src/input/passif7.pdf"  
     default_output_dir = "./src/output/passif"
     
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
